@@ -1,7 +1,7 @@
 ## CPTS 483 final project, arcuo marker based teleoperation
 
 # for setup
-print out bands from armbands.pdf \
+print out bands from [armbands.pdf](armbands.pdf) \
 band placement:\
 Band A (shoulder), just under the armpit, on the upper arm\
 Band B (elbow), just below the elbow, on the upper forearm\
