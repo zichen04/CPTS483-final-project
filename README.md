@@ -8,11 +8,9 @@ Band B (elbow), just below the elbow, on the upper forearm\
 Band C (wrist), just above the wrist, on the lower forearm\
 <img width="1037" height="384" alt="image" src="https://github.com/user-attachments/assets/c3227919-edb8-4961-b6bb-dc3484f44afa" />
 
-pip install opencv-contrib-python numpy\
-
 If using VirtualBox to run ROS, remember to pass the webcam to the virtual machine. You will need to download VirtualBox extension pack, enable 3d acceleration, and add a usb device filter for the webcam. As well as enabling guest additions and adding the camera once you're in the VM. 
 
-To run, simply ./run.sh\
+To run, simply ./run.sh
 
 Important note, once RVIZ is loaded, make sure to set the fixed frame to world frame. The default for me was panda_link0, probably because of previous projects using the panda arm and configs autosaving. This caused me a LOT of confusion for a bit.\
 
@@ -37,9 +35,9 @@ teleop worked somewhat, but not well enough to actually be useful.\
 A lot of this comes down to physical limitations. arcuo markers need all 4 corners visible for opencv to be able to detect them. Which means there are cases where opencv will not be able to detect a marker, and the simulated robot arm position would be left at where the last detected position was. \
 <img width="472" height="444" alt="image" src="https://github.com/user-attachments/assets/b07243a9-a41a-4bd8-af16-c673885c8f0e" />
 <img width="543" height="340" alt="image" src="https://github.com/user-attachments/assets/49bf2e1e-51bf-4f57-8deb-1d99fc211042" />
+A case where this happens is when you are rotating your arm, in which only parts of markers are visible, which causes a failure to detect. \
 
-
-
+Another limitation of the markers was the size. We tested various sizes of markers, and determined that 4cm was the smallest we could make the markers while being able to consitantly track them, at least with the computer webcam I was using. Another issue regarding the webcam was that autofocus would sometimes interfere with detection of the markers. There was also the problem of light, the markers need relatively consistant light, so glare and the printouts reflecting some light was an issue at times.
 
 
 
