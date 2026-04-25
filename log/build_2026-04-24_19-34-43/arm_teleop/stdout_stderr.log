@@ -1,0 +1,45 @@
+running egg_info
+creating ../build/arm_teleop/arm_teleop.egg-info
+writing ../build/arm_teleop/arm_teleop.egg-info/PKG-INFO
+writing dependency_links to ../build/arm_teleop/arm_teleop.egg-info/dependency_links.txt
+writing entry points to ../build/arm_teleop/arm_teleop.egg-info/entry_points.txt
+writing requirements to ../build/arm_teleop/arm_teleop.egg-info/requires.txt
+writing top-level names to ../build/arm_teleop/arm_teleop.egg-info/top_level.txt
+writing manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+reading manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+writing manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build
+creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib
+creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+copying arm_teleop/__init__.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+copying arm_teleop/tracking.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+copying arm_teleop/joint_publisher.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+copying arm_teleop/tracker_ros_node.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+running install
+running install_lib
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/__init__.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/tracking.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/joint_publisher.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/tracker_ros_node.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/tracking.py to tracking.cpython-310.pyc
+byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/joint_publisher.py to joint_publisher.cpython-310.pyc
+byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/tracker_ros_node.py to tracker_ros_node.cpython-310.pyc
+running install_data
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index/packages
+copying resource/arm_teleop -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/urdf
+copying urdf/arm.urdf -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/urdf
+creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/launch
+copying launch/arm_teleop.launch.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/launch
+running install_egg_info
+Copying ../build/arm_teleop/arm_teleop.egg-info to /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop-0.0.1-py3.10.egg-info
+running install_scripts
+Installing tracker_ros_node script to /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/arm_teleop
+writing list of installed files to '/home/zich/Desktop/CPTS483-final-project/build/arm_teleop/install.log'

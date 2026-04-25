@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<robot name="arm">
+
+  <link name="world"/>
+
+  <link name="shoulder_base">
+    <visual>
+      <geometry><sphere radius="0.04"/></geometry>
+      <material name="grey"><color rgba="0.6 0.6 0.6 1"/></material>
+    </visual>
+  </link>
+
+  <joint name="world_to_shoulder" type="fixed">
+    <parent link="world"/>
+    <child  link="shoulder_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- shoulder_abduct_link sits at the shoulder, no offset needed -->
+  <link name="shoulder_abduct_link"/>
+  <joint name="shoulder_abduct" type="revolute">
+    <parent link="shoulder_base"/>
+    <child  link="shoulder_abduct_link"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="10"/>
+  </joint>
+
+  <!-- upper_arm: cylinder along Z by default, centered at 0 0 0.15 -->
+  <!-- joint origin stays at shoulder, visual is centered in the link -->
+  <link name="upper_arm">
+    <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.025" length="0.30"/></geometry>
+      <material name="blue"><color rgba="0.2 0.4 0.8 1"/></material>
+    </visual>
+  </link>
+
+  <joint name="shoulder_flex" type="revolute">
+    <parent link="shoulder_abduct_link"/>
+    <child  link="upper_arm"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="10"/>
+  </joint>
+
+  <!-- elbow_ball: joint moves to end of upper arm (0.30 along Z) -->
+  <link name="elbow_ball">
+    <visual>
+      <geometry><sphere radius="0.03"/></geometry>
+      <material name="grey"><color rgba="0.6 0.6 0.6 1"/></material>
+    </visual>
+  </link>
+
+  <joint name="upper_arm_to_elbow" type="fixed">
+    <parent link="upper_arm"/>
+    <child  link="elbow_ball"/>
+    <origin xyz="0 0 0.30" rpy="0 0 0"/>
+  </joint>
+
+  <!-- forearm: joint at elbow, visual centered 0.14 along Z from elbow -->
+  <link name="forearm">
+    <visual>
+      <origin xyz="0 0 0.14" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.022" length="0.28"/></geometry>
+      <material name="green"><color rgba="0.2 0.7 0.3 1"/></material>
+    </visual>
+  </link>
+
+  <joint name="elbow_flex" type="revolute">
+    <parent link="elbow_ball"/>
+    <child  link="forearm"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <limit lower="0" upper="2.618" effort="100" velocity="10"/>
+  </joint>
+
+  <!-- hand: joint moves to end of forearm (0.28 along Z from elbow) -->
+  <link name="hand">
+    <visual>
+      <origin xyz="0 0 0.07" rpy="0 0 0"/>
+      <geometry><box size="0.06 0.14 0.02"/></geometry>
+      <material name="orange"><color rgba="0.9 0.5 0.1 1"/></material>
+    </visual>
+  </link>
+
+  <joint name="forearm_pronate" type="revolute">
+    <parent link="forearm"/>
+    <child  link="hand"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0.28" rpy="0 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="10"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,47 @@
+[0.723s] Invoking command in '/home/zich/Desktop/CPTS483-final-project/arm_teleop': PYTHONPATH=/home/zich/Desktop/CPTS483-final-project/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/arm_teleop build --build-base /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build install --record /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/install.log --single-version-externally-managed install_data
+[0.972s] running egg_info
+[0.976s] creating ../build/arm_teleop/arm_teleop.egg-info
+[0.976s] writing ../build/arm_teleop/arm_teleop.egg-info/PKG-INFO
+[0.985s] writing dependency_links to ../build/arm_teleop/arm_teleop.egg-info/dependency_links.txt
+[0.986s] writing entry points to ../build/arm_teleop/arm_teleop.egg-info/entry_points.txt
+[0.986s] writing requirements to ../build/arm_teleop/arm_teleop.egg-info/requires.txt
+[0.986s] writing top-level names to ../build/arm_teleop/arm_teleop.egg-info/top_level.txt
+[0.986s] writing manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+[0.986s] reading manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+[0.986s] writing manifest file '../build/arm_teleop/arm_teleop.egg-info/SOURCES.txt'
+[0.986s] running build
+[0.987s] running build_py
+[0.987s] creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build
+[0.987s] creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib
+[0.987s] creating /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+[0.987s] copying arm_teleop/__init__.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+[0.987s] copying arm_teleop/tracking.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+[0.987s] copying arm_teleop/joint_publisher.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+[0.987s] copying arm_teleop/tracker_ros_node.py -> /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop
+[0.987s] running install
+[0.988s] running install_lib
+[0.991s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+[0.992s] copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/__init__.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+[0.992s] copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/tracking.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+[0.993s] copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/joint_publisher.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+[0.993s] copying /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build/lib/arm_teleop/tracker_ros_node.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop
+[0.993s] byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/__init__.py to __init__.cpython-310.pyc
+[0.993s] byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/tracking.py to tracking.cpython-310.pyc
+[0.998s] byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/joint_publisher.py to joint_publisher.cpython-310.pyc
+[0.999s] byte-compiling /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop/tracker_ros_node.py to tracker_ros_node.cpython-310.pyc
+[1.001s] running install_data
+[1.001s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index
+[1.001s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index
+[1.002s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index/packages
+[1.002s] copying resource/arm_teleop -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/ament_index/resource_index/packages
+[1.002s] copying package.xml -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop
+[1.003s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/urdf
+[1.003s] copying urdf/arm.urdf -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/urdf
+[1.003s] creating /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/launch
+[1.003s] copying launch/arm_teleop.launch.py -> /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/share/arm_teleop/launch
+[1.003s] running install_egg_info
+[1.005s] Copying ../build/arm_teleop/arm_teleop.egg-info to /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages/arm_teleop-0.0.1-py3.10.egg-info
+[1.007s] running install_scripts
+[1.036s] Installing tracker_ros_node script to /home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/arm_teleop
+[1.037s] writing list of installed files to '/home/zich/Desktop/CPTS483-final-project/build/arm_teleop/install.log'
+[1.072s] Invoked command in '/home/zich/Desktop/CPTS483-final-project/arm_teleop' returned '0': PYTHONPATH=/home/zich/Desktop/CPTS483-final-project/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zich/Desktop/CPTS483-final-project/install/arm_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/arm_teleop build --build-base /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/build install --record /home/zich/Desktop/CPTS483-final-project/build/arm_teleop/install.log --single-version-externally-managed install_data

@@ -1,0 +1,3 @@
+[console_scripts]
+tracker_ros_node = arm_teleop.tracker_ros_node:main
+
