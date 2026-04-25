@@ -1,43 +1,4 @@
-"""
-tracking.py
------------
-Vision-based arm joint configuration tracker using ArUco markers.
 
-SETUP:
-  pip install opencv-contrib-python numpy
-
-BAND PLACEMENT:
-  Band A (shoulder) : just under the armpit, on the upper arm
-  Band B (elbow)    : just below the elbow, on the upper forearm
-  Band C (wrist)    : just above the wrist, on the lower forearm
-
-  Bands B and C are both on the forearm. The vector A->B gives upper arm
-  direction. The vector B->C gives forearm direction. This is valid even
-  though B and C are on the same segment -- they just need to be rigidly
-  attached to their respective limb segments and separated enough to give
-  a stable direction vector.
-
-MARKER IDs:
-  Band A (shoulder) : IDs 0, 1, 2, 3
-  Band B (elbow)    : IDs 4, 5, 6, 7
-  Band C (wrist)    : IDs 8, 9, 10, 11
-
-  4 markers per band, evenly spaced 90 degrees apart around circumference.
-  At least one marker per band must be visible at all times.
-  Marker facing direction does not matter for position-based joints.
-
-JOINT OUTPUT (radians, all zero at T-pose initialization):
-  shoulder_flex    : arm forward/back   (+= forward, -= back)
-  shoulder_abduct  : arm up/down        (+= up,      -= down)
-  elbow_flex       : elbow bend         (0 = straight, += bent)
-  forearm_pronate  : forearm rotation   (+= pronation, -= supination)
-
-  Wrist flex is NOT tracked -- bands on the forearm cannot capture
-  wrist joint motion reliably.
-
-COORDINATE CONVENTION:
-  Camera frame: X right, Y down, Z into screen (standard OpenCV).
-"""
 
 import cv2
 import numpy as np
